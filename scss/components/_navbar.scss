@@ -1,0 +1,26 @@
+.top-page {
+  @apply flex flex-col items-center justify-center max-w-2xl mx-auto py-10;
+
+    h1 {
+        @apply text-7xl font-bold text-white uppercase;
+    }
+
+    .-block{
+        @apply w-full h-20 bg-gray-300;
+    }
+}
+
+.navbar{
+    @apply border-t-2 border-gray-300;
+    ._menu{
+        @apply my_container flex flex-1 items-center justify-between;
+    
+        .-items{
+            @apply flex justify-between items-center text-white uppercase py-4;
+        }
+
+        .-items:hover{
+            @apply text-gray-300;
+        }
+    }
+}

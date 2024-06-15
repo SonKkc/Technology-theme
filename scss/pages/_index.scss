@@ -1,0 +1,39 @@
+.outstanding{
+    @apply w-7/12 flex flex-col gap-2;
+
+    .-title{
+        @apply text-3xl font-bold truncate;
+    }
+
+    .-img{
+        @apply w-full h-[450px] object-cover;
+    }
+
+    .-content{
+        @apply uppercase text-xs;
+
+        p{
+            @apply text-justify truncate;
+        }
+    }
+}
+
+.latest{
+    @apply w-5/12 flex flex-col gap-2 overflow-hidden;
+
+    .-items{
+        @apply flex gap-2 overflow-hidden max-h-24;
+
+        img{
+            @apply w-52 h-24 object-cover;
+        }
+
+        .-content{
+            @apply font-semibold text-ellipsis overflow-hidden;
+        }
+    }
+
+    .items:hover .-content{
+        @apply underline cursor-pointer;
+    }
+}

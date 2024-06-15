@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.my_container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.top-page {
+  @apply flex flex-col items-center justify-center max-w-2xl mx-auto py-10;
+}
+.top-page h1 {
+  @apply text-7xl font-bold text-white uppercase;
+}
+.top-page .-block {
+  @apply w-full h-20 bg-gray-300;
+}
+
+.navbar {
+  @apply border-t-2 border-gray-300;
+}
+.navbar ._menu {
+  @apply my_container flex flex-1 items-center justify-between;
+}
+.navbar ._menu .-items {
+  @apply flex justify-between items-center text-white uppercase py-4;
+}
+.navbar ._menu .-items:hover {
+  @apply text-gray-300;
+}
+
+.outstanding {
+  @apply w-7/12 flex flex-col gap-2;
+}
+.outstanding .-title {
+  @apply text-3xl font-bold truncate;
+}
+.outstanding .-img {
+  @apply w-full h-[450px] object-cover;
+}
+.outstanding .-content {
+  @apply uppercase text-xs;
+}
+.outstanding .-content p {
+  @apply text-justify truncate;
+}
+
+.latest {
+  @apply w-5/12 flex flex-col gap-2 overflow-hidden;
+}
+.latest .-items {
+  @apply flex gap-2 overflow-hidden max-h-24;
+}
+.latest .-items img {
+  @apply w-52 h-24 object-cover;
+}
+.latest .-items .-content {
+  @apply font-semibold text-ellipsis overflow-hidden;
+}
+.latest .items:hover .-content {
+  @apply underline cursor-pointer;
+}/*# sourceMappingURL=style.css.map */
