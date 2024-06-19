@@ -128,7 +128,7 @@ body {
 }
 
 .navbar_mobile {
-  @apply max-sm:fixed left-0 right-0 top-0 py-4 bg-black md:hidden lg:hidden z-20;
+  @apply max-sm:fixed left-0 right-0 top-0 py-4 bg-black md:hidden lg:hidden z-20 max-h-screen;
 }
 .navbar_mobile .navbar {
   @apply flex justify-between items-center text-white;
@@ -140,7 +140,7 @@ body {
   @apply cursor-pointer;
 }
 .navbar_mobile .navmenu {
-  @apply w-full h-fit bg-black absolute top-[64px] right-0 z-10;
+  @apply w-full h-fit bg-black absolute top-[64px] right-0 z-10 overflow-y-scroll;
 }
 .navbar_mobile .navmenu .-menu {
   @apply flex flex-col my-4 px-4 text-right gap-2;
@@ -149,7 +149,7 @@ body {
   @apply text-white text-base uppercase py-2 flex items-center justify-end;
 }
 .navbar_mobile .navmenu .-menulv2 {
-  @apply w-full h-fit bg-gray-800 z-10 flex flex-col gap-2 px-4;
+  @apply w-full h-fit bg-gray-800 z-10 flex flex-col gap-2 px-4 overflow-y-scroll;
 }
 .navbar_mobile .navmenu .-menulv2 .-items {
   @apply text-white text-base uppercase py-2 flex items-center justify-end;
@@ -208,7 +208,7 @@ body {
   @apply flex gap-2 overflow-hidden max-h-24;
 }
 .latest-col .-items img {
-  @apply w-52 h-24 object-cover;
+  @apply w-44 h-24 object-cover;
 }
 .latest-col .-items .-title {
   @apply font-semibold text-ellipsis overflow-hidden;
