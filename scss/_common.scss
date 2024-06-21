@@ -107,3 +107,31 @@ body {
         }
     }
 }
+
+.page_section{
+    @apply flex items-center justify-between;
+
+    .-title{
+        @apply text-4xl font-bold uppercase text-[40px];
+    }
+
+    .-searchbar{
+        @apply border border-transparent rounded-full p-2 bg-gray-200 flex items-center gap-2 max-w-[300px];
+
+        input{
+            @apply bg-transparent outline-none w-[300px];
+        }
+
+        .-btn{
+            @apply text-gray-400;
+        }
+    }
+}
+
+.pagination{
+    @apply w-full flex items-center justify-center border rounded border-gray-500 p-2 mt-4;
+
+    p{
+        @apply text-gray-700;
+    }
+}

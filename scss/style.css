@@ -93,13 +93,36 @@ body {
   @apply w-5/12 max-sm:w-2/12 border border-gray-800;
 }
 
+.page_section {
+  @apply flex items-center justify-between;
+}
+.page_section .-title {
+  @apply text-4xl font-bold uppercase text-[40px];
+}
+.page_section .-searchbar {
+  @apply border border-transparent rounded-full p-2 bg-gray-200 flex items-center gap-2 max-w-[300px];
+}
+.page_section .-searchbar input {
+  @apply bg-transparent outline-none w-[300px];
+}
+.page_section .-searchbar .-btn {
+  @apply text-gray-400;
+}
+
+.pagination {
+  @apply w-full flex items-center justify-center border rounded border-gray-500 p-2 mt-4;
+}
+.pagination p {
+  @apply text-gray-700;
+}
+
 .navbar_base {
   @apply max-sm:hidden;
 }
 .navbar_base .top-page {
   @apply flex flex-col items-center justify-center max-w-2xl mx-auto py-10;
 }
-.navbar_base .top-page h1 {
+.navbar_base .top-page a {
   @apply text-7xl font-bold text-white uppercase;
 }
 .navbar_base .top-page .-block {
@@ -256,4 +279,57 @@ body {
 }
 .newsletter ._container .-social p {
   @apply uppercase text-white font-semibold;
+}
+
+.head_page_section {
+  @apply grid grid-cols-2 gap-4 pt-10 pb-5 max-sm:grid-cols-1 max-sm:gap-2;
+}
+.head_page_section .-items {
+  @apply relative;
+}
+.head_page_section .-items img {
+  @apply w-full h-64 object-cover;
+}
+.head_page_section .-items .-content {
+  @apply absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black text-white flex flex-col gap-2 p-8;
+}
+.head_page_section .-items .-content h2 {
+  @apply text-2xl font-semibold transition ease-in-out duration-300;
+}
+.head_page_section .-items .-content .-author {
+  @apply flex items-center gap-2 text-sm text-gray-400;
+}
+.head_page_section .-items:first-child {
+  @apply col-span-2;
+}
+.head_page_section .-items:first-child img {
+  @apply h-[537px] object-cover;
+}
+.head_page_section .-items:first-child .-content h2 {
+  @apply text-4xl font-bold;
+}
+.head_page_section .-items:hover .-content h2 {
+  @apply -translate-y-2;
+}
+
+.section_grid-col-1 {
+  @apply grid grid-cols-1 gap-4 max-sm:gap-2;
+}
+.section_grid-col-1 .-items {
+  @apply flex items-center gap-4;
+}
+.section_grid-col-1 .-items img {
+  @apply w-[276px] h-36 object-cover max-sm:w-32 max-sm:h-16;
+}
+.section_grid-col-1 .-items .-content {
+  @apply flex flex-col gap-2;
+}
+.section_grid-col-1 .-items .-content .-title {
+  @apply text-justify text-xl font-medium;
+}
+.section_grid-col-1 .-items .-content .-author {
+  @apply flex gap-2 items-center text-gray-700;
+}
+.section_grid-col-1 .-items:hover .-title {
+  @apply underline cursor-pointer;
 }/*# sourceMappingURL=style.css.map */
