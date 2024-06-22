@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-
 <style>
     [x-cloak] {
         display: none !important;
@@ -136,8 +135,8 @@
 
     <!--Main-->
     <div class="main">
-        <!--Page title section-->
-        <div class="my_container" x-data="{openSearch: false, searchClose: true}">
+        <!--Page name and search section-->
+        <div class="my_container">
             <!--search desktop-->
             <div class="page_name-n-search">
                 <div class="-title">latest tech new</div>
@@ -153,65 +152,14 @@
             </div>
             <!--search mobile-->
             <div class="page_name-n-search_mobile">
-                <div x-show="searchClose" class="-title">latest tech new</div>
-                <!--btn open search-->
-                <button x-show="searchClose" x-on:click="openSearch = true, searchClose = false" class="-btn"><svg
-                        class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        fill="none" viewBox="0 0 24 24">
+                <div class="-title">latest tech new</div>
+                <button class="-btn"><svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
                             d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
                     </svg>
                 </button>
-                <!--search bar-->
-                <div x-cloak x-show="openSearch" x-on:click.outside="openSearch = false, searchClose = true"
-                    class="-searchbar">
-                    <input type="text" placeholder="Search for news" class="-input">
-                    <button class="-btn"><svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
-                                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
-                        </svg>
-                    </button>
-                </div>
             </div>
-
-        </div>
-
-        <!--Category latest section-->
-        <div class="my_container head_page_section">
-            <a href="#" class="-items">
-                <img src="./images/demo/outstanding.jpeg" alt="" class="">
-                <div class="-content">
-                    <h2>Watch the Apple Intelligence reveal, and the rest of WWDC 2024 right here</h2>
-                    <div class="-author">
-                        <span>Brian</span>
-                        <span>.</span>
-                        <span>Today</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="-items">
-                <img src="/images/demo/latest-1.jpeg" alt="" class="">
-                <div class="-content">
-                    <h2>Bangladeshi police agents accused of selling citizens’ personal information on Telegram</h2>
-                    <div class="-author">
-                        <span>Lorenzo Franceschi-Bicchierai</span>
-                        <span>.</span>
-                        <span>Today</span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="-items">
-                <img src="/images/demo/latest-3.png" alt="" class="">
-                <div class="-content">
-                    <h2>LinkedIn to limit targeted ads in EU after complaint over sensitive data use</h2>
-                    <div class="-author">
-                        <span>Paul Sawers</span>
-                        <span>.</span>
-                        <span>Today</span>
-                    </div>
-                </div>
-            </a>
         </div>
 
         <!--Category list page-->
@@ -360,9 +308,10 @@
 
         <!--Pagination-->
         <div class="my_container">
-            <a href="cate_page-2.html" class="pagination">
-                <p class="">Next page</p>
-            </a>
+            <div class="pagination_2">
+                <a href="category.html" class="-btn">Previuos page</a>
+                <a href="cate_page-2.html" class="-btn">Next page</a>
+            </div>
         </div>
     </div>
 

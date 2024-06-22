@@ -8,7 +8,7 @@ body {
 }
 
 .main{
-    @apply py-20 max-sm:py-2 max-sm:pt-[64px];
+    @apply pt-20 max-sm:py-2 max-sm:pt-[64px] pb-10;
 }
 
 .section_flex{
@@ -108,11 +108,11 @@ body {
     }
 }
 
-.page_section{
-    @apply flex items-center justify-between;
+.page_name-n-search{
+    @apply flex items-center justify-between pb-10 max-sm:hidden;
 
     .-title{
-        @apply text-4xl font-bold uppercase text-[40px];
+        @apply text-4xl font-bold uppercase max-sm:text-2xl;
     }
 
     .-searchbar{
@@ -128,10 +128,22 @@ body {
     }
 }
 
-.pagination{
-    @apply w-full flex items-center justify-center border rounded border-gray-500 p-2 mt-4;
+.page_name-n-search_mobile{
+    @apply hidden max-sm:flex items-center justify-between py-4 max-h-[68px];
 
-    p{
-        @apply text-gray-700;
+    .-title{
+        @apply font-bold uppercase text-[24px];
+    }
+
+    .-searchbar{
+        @apply border border-transparent rounded-full p-2 bg-gray-200 flex items-center gap-2 w-full;
+    
+        input{
+            @apply bg-transparent outline-none w-full;
+        }
+    
+        .-btn{
+            @apply text-gray-400;
+        }
     }
 }
