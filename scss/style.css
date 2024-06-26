@@ -320,7 +320,7 @@ body {
   @apply text-2xl font-semibold transition ease-in-out duration-300 max-sm:text-xl;
 }
 .head_page_section .-items .-content .-author {
-  @apply flex items-center gap-2 text-sm text-gray-400;
+  @apply flex items-center gap-2 text-sm text-gray-400 font-light;
 }
 .head_page_section .-items:first-child {
   @apply col-span-2 max-sm:col-span-1;
@@ -351,7 +351,7 @@ body {
   @apply text-xl font-medium max-sm:text-lg max-sm:leading-6;
 }
 .section_grid-col-1 .-items .-content .-author {
-  @apply flex gap-2 items-center text-gray-700 max-sm:text-sm;
+  @apply flex gap-2 items-center text-gray-700 max-sm:text-sm font-light;
 }
 .section_grid-col-1 .-items:hover .-title {
   @apply underline cursor-pointer;

@@ -16,7 +16,7 @@
             }
 
             .-author{
-                @apply flex items-center gap-2 text-sm text-gray-400;
+                @apply flex items-center gap-2 text-sm text-gray-400 font-light;
 
             }
         }
@@ -59,7 +59,7 @@
             }
 
             .-author{
-                @apply flex gap-2 items-center text-gray-700 max-sm:text-sm;
+                @apply flex gap-2 items-center text-gray-700 max-sm:text-sm font-light;
             }
         }
     }
